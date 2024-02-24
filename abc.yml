@@ -1,0 +1,9 @@
+
+- name: Build Docker image
+  hosts: localhost
+  tasks:
+    - name: Build Docker image
+      command: docker build -t image:latest .
+      args:
+        chdir: /home/ec2-user/Project123
+
